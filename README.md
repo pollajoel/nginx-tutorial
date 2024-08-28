@@ -1,2 +1,2 @@
-# nginx-tutorial
-apprentissage de ngin-x
+#Configuration de Nginx
+- Apprentissage des contextes de base
