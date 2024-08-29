@@ -25,6 +25,13 @@ pipeline {
                             echo '- Applied All Test...'
                        '''
                 }
+                steps {
+                    sh '''
+                        echo ' Clean Delete Test...'
+                        '''
+                }
+
+                
             }
         
     }
