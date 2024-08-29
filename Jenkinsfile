@@ -5,33 +5,29 @@ pipeline {
     }
 
     stages {
-            stage("Build"){
+        
+            stage("Build") {
                 steps {
                     sh '''
                             echo '- Clean Container..';
                         '''
                 }
             }
-            stage("Deploy"){
+        
+            stage("Deploy") {
                 steps {
                         sh '''
                                echo '- Deploy Apps...';
                             '''
                 }
             }
-            stage("Test"){
-                steps{
+        
+            stage("Test") {
+                steps {
                     sh '''
                             echo '- Applied All Test...'
                        '''
-                }
-                steps {
-                    sh '''
-                        echo ' Clean Delete Test...'
-                        '''
-                }
-
-                
+                }           
             }
         
     }
