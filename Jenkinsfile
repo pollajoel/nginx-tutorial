@@ -7,23 +7,23 @@ pipeline {
     stages {
             stage("Build"){
                 steps {
-                    sh ```
+                    sh '''
                             echo '- Clean Container..';
-                        ```
+                        '''
                 }
             }
             stage("Deploy"){
                 steps {
-                        sh ```
+                        sh '''
                                echo '- Deploy Apps...';
-                            ```
+                            '''
                 }
             }
             stage("Test"){
                 steps{
-                    sh ```
+                    sh '''
                             echo '- Applied All Test...'
-                    ```
+                       '''
                 }
             }
         
