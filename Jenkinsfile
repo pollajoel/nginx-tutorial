@@ -5,9 +5,27 @@ pipeline {
     }
 
     stages {
-            stage("Build"){}
-            stage("Deploy"){}
-            stage("Test"){}
+            stage("Build"){
+                steps {
+                    sh ```
+                            echo '- Clean Container..';
+                        ```
+                }
+            }
+            stage("Deploy"){
+                steps {
+                        sh ```
+                               echo '- Deploy Apps...';
+                            ```
+                }
+            }
+            stage("Test"){
+                steps{
+                    sh ```
+                            echo '- Applied All Test...'
+                    ```
+                }
+            }
         
     }
 
